@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{min-height: 1500px;
+    background: linear-gradient(#2b1055,#7997de);
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+header .logo{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+header ul{display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header ul li{margin: 0 30px;
+    list-style: none;
+
+}
+header ul li a{font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 15px;
+    transition: .8s;
+}
+
+.all-img{
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.all-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#moon{
+    mix-blend-mode: screen;
+}
+#front{
+    z-index: 2;
+}
+
+#behind{
+    z-index: 1;
+}
+
+#text{
+    position: absolute;
+    right: -230px;
+    color: white;
+    font-size: 100px;
+    z-index: 1;
+}
+
+#btn{position: relative;
+    left: -300px;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 8px 30px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.textt{
+    background-color: white;
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.textt h2{text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+
+}
+.textt p{margin-top: 30px;
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+
+}
